@@ -1,0 +1,36 @@
+.caja{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    border: solid black 1px;
+}
+
+#caja1{
+    position: absolute;
+    background-color: blueviolet;
+    top: 10px;
+    left: 180px;
+}
+
+#caja2{
+    position: sticky;
+    background-color: brown;
+    top: 15px;
+}
+
+#caja3{
+    position: relative;
+    background-color: blue;
+    left: 220px;
+}
+
+#caja4{
+    position: fixed;
+    background-color: chartreuse;
+    top: 140px;
+}
+
+#caja5{
+    background-color: crimson;
+    margin-top: 500px;
+}

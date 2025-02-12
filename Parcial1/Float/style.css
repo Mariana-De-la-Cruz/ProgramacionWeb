@@ -1,0 +1,11 @@
+.caja{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border: solid black 1px;
+    float: left;
+}
+
+#caja1{
+    background-color: blueviolet;
+}
