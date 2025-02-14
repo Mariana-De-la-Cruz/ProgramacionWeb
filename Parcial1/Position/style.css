@@ -1,36 +1,58 @@
 .caja{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100px;
     width: 200px;
     text-align: center;
     border: solid black 1px;
+    margin-top: 5px;
 }
 
 #caja1{
-    position: absolute;
+    width: 500px;
+    position: fixed;
     background-color: blueviolet;
-    top: 10px;
-    left: 180px;
+    left: 220px;
+    top: 0px;
 }
 
 #caja2{
     position: sticky;
     background-color: brown;
-    top: 15px;
+    margin-top: 120px;
+    top: 0px;
 }
 
 #caja3{
-    position: relative;
     background-color: blue;
-    left: 220px;
 }
 
 #caja4{
-    position: fixed;
     background-color: chartreuse;
-    top: 140px;
 }
 
 #caja5{
-    background-color: crimson;
-    margin-top: 500px;
+    position: relative;
+    width: 600px;
+    background-color: #f88417;
+    left: 25px;
+    top: 5px;
+}
+
+#caja6{
+    position: absolute;
+    background-color: #6a50ff;
+    left: 215px;
+    top: 580px;
+}
+
+#caja7{
+    background-color: #ffd000;
+}
+
+#caja8{
+    background-color: dimgray;
+}
+
+#caja9{
+    background-color: hotpink;
 }
