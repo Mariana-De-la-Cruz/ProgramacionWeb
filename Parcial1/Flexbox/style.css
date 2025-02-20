@@ -1,0 +1,35 @@
+*{ /*Reseteo de CSS (No recomendable)*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    background-color: #9338e7;
+    display: flex;
+    flex-direction: row; /*Dirección en que se acomodan las cajas*/
+    justify-content: space-between;
+}
+
+.caja{
+    border: 3px solid #e280eb;
+    background-color: #6379f5;
+    width: 100px;
+    height: 50px;
+}
+
+/*#caja1{
+    flex-grow: 25;
+}
+
+#caja2{
+    flex-grow: 25;
+}
+
+#caja3{
+    flex-grow: 25;
+}
+
+#caja4{
+    flex-grow: 25;
+}*/
