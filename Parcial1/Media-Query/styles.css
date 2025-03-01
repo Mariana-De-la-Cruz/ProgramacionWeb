@@ -5,9 +5,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+body{
+    background-color: whitesmoke;
+}
+
 nav{
-    background-color: burlywood;
-    overflow: auto;
+    width: 100%;
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -15,12 +19,32 @@ nav{
 
 .opcion{
     color: black;
-    background-color: powderblue;
+    background-color: violet;
     margin: 5px;
     padding: 5px;
 }
 
-@media screen and (max-width: 400px){
+h1{
+    text-align: center;
+    color: #cf68cf;
+}
+
+p{
+    font-style: italic;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.contenido{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 780px){
     nav {
         flex-direction: column;
         align-items: center; 
@@ -29,5 +53,10 @@ nav{
     .opcion {
         width: 100%; 
         text-align: center; 
-    }    
+    }
+
+    .contenido{
+        flex-direction: column;
+        align-items: center;
+    }
 }
