@@ -1,0 +1,25 @@
+$color-letra: #d531e4d8;
+$color-fondo: rgb(243, 239, 239);
+$ancho: 200px;
+$largo: 400px;
+
+body{
+    background-color: $color-fondo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: $color-letra;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+#imagen{
+    float: right;
+    height: $ancho;
+    width: $largo;
+    border-radius: 5%;
+}

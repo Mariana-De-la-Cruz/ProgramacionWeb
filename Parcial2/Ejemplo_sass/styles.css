@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(243, 239, 239);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: rgba(213, 49, 228, 0.8470588235);
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+#imagen {
+  float: right;
+  height: 200px;
+  width: 400px;
+  border-radius: 5%;
+}/*# sourceMappingURL=styles.css.map */
