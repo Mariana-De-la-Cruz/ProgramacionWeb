@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Parcial2/Layout/styles/styles.css">
+    <title>Curiosidades</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/7565/7565182.png" alt="logo" height="50px" width="50px">
+                <h2>Curioso</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="/Parcial2/Layout/html/Opcion1.html">Historia & Cultura</a></li>
+                <li><a href="/Parcial2/Layout/html/Opcion2.html">Ciencia & Tecnología</a></li>
+                <li><a href="/Parcial2/Layout/html/Opcion3.html">Animales & Naturaleza</a></li>
+                <li><a href="/Parcial2/Layout/html/Opcion4.html">Espacio & Astronomía</a></li>
+            </ul>
+            <div class="boton">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="/Parcial2/Layout/html/Opcion1.html">Historia & Cultura</a></li>
+            <li><a href="/Parcial2/Layout/html/Opcion2.html">Ciencia & Tecnología</a></li>
+            <li><a href="/Parcial2/Layout/html/Opcion3.html">Animales & Naturaleza</a></li>
+            <li><a href="/Parcial2/Layout/html/Opcion4.html">Espacio & Astronomía</a></li>
+        </div>
+    </header>
+
+    
+    <div class="contenido">
+        <div class="imagen_portada">
+            <div class="titulo"><h1>Descubre cosas  nuevas</h1></div>
+        </div>
+        <h3>Los artículos más interesantes...</h3>
+        <div class="link_imagenes">
+            <div class="imagen">
+                <a href="https://www.nationalgeographicla.com/historia/2025/02/las-5-curiosidades-del-carnaval-de-rio-a-traves-del-sambodromo-mas-famoso-del-mundo" target="_blank">
+                    <img src="/Parcial2/Layout/imagenes/carnaval.jpg">
+                </a>
+                <h2>Curiosidades sobre el Carnaval de Rio</h2>
+            </div>
+            <div class="imagen">
+                <a href="https://www.nationalgeographicla.com/ciencia/2025/03/el-cerebro-humano-crecio-durante-millones-de-anos-luego-redujo-su-tamano" target="_blank">
+                    <img src="/Parcial2/Layout/imagenes/cerebro.jpg">
+                </a>
+                <h2>El cerebro humano</h2>
+            </div>
+            <div class="imagen">
+                <a href="https://www.nationalgeographicla.com/espacio/2024/01/cual-es-la-causa-de-estas-explosiones-masivas-y-misteriosas-en-el-espacio" target="_blank">
+                    <img src="/Parcial2/Layout/imagenes/espacio-explosion.jpg">
+                </a>
+                <h2>Explosiones en el espacio: ¿Qué las causa?</h2>
+            </div>
+        </div>
+    </div>
+
+    <script> //Ayuda con el boton
+        const boton = document.querySelector('.boton')
+        const botonIcon = document.querySelector('.boton i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        boton.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            botonIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
