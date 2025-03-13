@@ -108,7 +108,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url('/Parcial2/Layout/imagenes/portada.jpg');
+    background-image: url('../imagenes/portada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
