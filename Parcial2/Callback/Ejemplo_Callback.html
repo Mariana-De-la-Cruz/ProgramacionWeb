@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Callback</title>
+</head>
+<body>
+    <script>
+        function proceso(fun) {
+            let n = window.prompt('Tecee su nombre');
+            let a = window.prompt('Tecee su apellido');
+            fun(n,a); 
+        }
+
+        function concatenar(nom, ape) {
+            let nomMay = nom + ' ' + ape; //concatena nombre y apellido
+            window.alert(nomMay);
+        }
+
+        proceso(concatenar); //Callback: función que pasa como parámetro a otra función
+    </script>
+</body>
+</html>
