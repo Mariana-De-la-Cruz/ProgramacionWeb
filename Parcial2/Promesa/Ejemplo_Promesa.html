@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Callback</title>
+</head>
+<body>
+    <script>           
+        let miPromesa = new Promise ((resolve, reject) => {
+            let n = window.prompt('Tecee su nombre');
+            let a = window.prompt('Tecee su apellido');
+            resolve(n + ' ' + a);
+        });
+
+        function concatenar(nomMay) {
+            window.alert(nomMay);
+        }
+        
+        //Promesa: cuando algún proceso se va a tardar deja el código pendiente
+        miPromesa.then(concatenar);
+    </script>
+</body>
+</html>
