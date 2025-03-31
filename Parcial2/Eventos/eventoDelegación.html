@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="containerPadre">
+        <button id="btn1">BOTÓN1</button>
+        <button id="btn2">BOTÓN2</button>
+        <button id="btn3">BOTÓN3</button>
+        <button id="btn4">BOTÓN4</button>
+    </div>
+    <div id="containerHijo">
+        <button id="btn2">BOTÓN2</button>
+        <button id="btn3">BOTÓN3</button>
+        <button id="btn4">BOTÓN4</button>
+        <button id="btn5">BOTÓN5</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById(`containerPadre`).addEventListener("click", (evento)=>{
+                console.log(evento.target)
+            })
+        }
+    </script>
+</body>
+</html>
