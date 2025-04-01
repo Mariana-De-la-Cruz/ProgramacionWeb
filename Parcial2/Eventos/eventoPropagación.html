@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ContainerPadre">
+        <div id="ContainerHijo1">
+            <button id="btn1">BOTÓN1</button>
+            <button id="btn2">BOTÓN2</button>
+            <button id="btn3">BOTÓN3</button>
+            <button id="btn4">BOTÓN4</button>
+        </div>
+        <div id="ContainerHijo2">
+            <button id="btn5">BOTÓN5</button>
+            <button id="btn6">BOTÓN6</button>
+            <button id="btn7">BOTÓN7</button>
+            <button id="btn8">BOTÓN8</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("ContainerPadre").addEventListener("click", (evento)=>{
+                console.log("click en el padre");
+            });
+            document.getElementById("ContainerHijo1").addEventListener("click", (evento)=>{
+                console.log("click en el hijo");
+            });
+            document.getElementById("btn4").addEventListener("click", (evento)=>{
+                console.log("click en el boton");
+                e.stopPropagation();
+            });
+        }
+    </script>
+</body>
+</html>
