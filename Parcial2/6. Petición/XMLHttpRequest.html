@@ -23,7 +23,7 @@
         }*/
 
         //XMLHttpRequest
-        function hacerPeticion() {
+        window.onload = function () {
             var peticion = new XMLHttpRequest();
             peticion.open('GET', 'https://randomfox.ca/floof/', true);
             peticion.responseType = 'json';
@@ -37,6 +37,7 @@
 
             peticion.send();
         }
+        
     </script>
 </body>
 </html>
