@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lista</title>
+</head>
+<body>
+    <h2>LLENADO DE UNA LISTA EN EL DOM CON UN ARREGLO EN JAVASCRIPT</h2>
+    
+    <input type="text" id="nuevoElemento" placeholder="nuevoElemento">
+    <button id="btnAgregar">Agregar</button>
+
+    <div id="contenedor"></div>
+    <style>
+        h2{
+            text-align: center;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: powderblue;
+        }
+    </style>
+    <script>
+        //DECLARACIÓN DE ARREGLO
+        let arreglo = ["ELEMENTO_1", "ELEMENTO_2", "ELEMENTO_3", "ELEMENTO_4", "ELEMENTO_5", "ELEMENTO_6"];
+        
+        //CREAR ELEMENTO UL GLOBAL
+        const lista = document.createElement("ul");
+
+        //MOSTRAR LISTA
+        function mostrarLista() {
+            lista.innerHTML = "";
+            for (const a of arreglo) {
+                const item = document.createElement("li");
+                item.textContent = a;
+                lista.appendChild(item);
+            }
+            const contenedor = document.getElementById("contenedor");
+            contenedor.innerHTML = "";
+            contenedor.appendChild(lista);
+        }
+
+        //AGREGAR ELEMENTO
+        function agregarElemento() {
+            const input = document.getElementById("nuevoElemento");
+            const valor = input.value.trim();
+            if (valor !== "") {
+                arreglo.push(valor);
+                mostrarLista();
+                input.value = "";
+                input.focus();
+            } else {
+                alert("Por favor, ingresa un valor válido.");
+            }
+        }
+
+        //ASOCIAR EVENTO CLICK AL BOTÓN
+        document.getElementById("btnAgregar").addEventListener("click", agregarElemento);
+
+        //MOSTRAR LISTA AL CARGAR
+        mostrarLista();
+    </script>
+</body>
+</html>
+
+<!--
+    Llenar una lista en el DOM a partir de un arreglo en Javascript
+    agregar: un input y boton para agregar elementos.
+    pseudocodgio:
+        CREAR ELEMENTO UL
+        RECORRER ARRAY
+        {
+            CREANDO ELEMENTOS LI
+            AGREGAR AL ELEMENTO UL
+        }
+        AGREGAR ELEMENTO UL AL DIV CONTENEDOR
+-->
