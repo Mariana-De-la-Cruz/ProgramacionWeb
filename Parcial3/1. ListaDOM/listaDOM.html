@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Lista</title>
+</head>
+<body>
+    <h2>LLENADO DE UNA LISTA EN EL DOM CON UN ARREGLO EN JAVASCRIPT</h2>
+    <div id="contenedor">
+    </div>
+    <style>
+        h2{
+            text-align: center;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: powderblue;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            //DECLARACIÓN DE ARREGLO
+            let arreglo = ["ELEMENTO_1", "ELEMENTO_2", "ELEMENTO_3", "ELEMENTO_4", "ELEMENTO_5", "ELEMENTO_6"];
+            // CREAR ELEMENTO UL
+            const lista = document.createElement("ul");
+            // RECORRER ARRAY MEDIANTE CICLO FOR OF
+            for (const a of arreglo) {
+                // CREANDO ELEMENTO LI
+                const item = document.createElement("li");
+                // AGREGAR TEXTO AL ELEMENTO LI
+                item.textContent = a;
+                // AGREGAR LI AL UL
+                lista.appendChild(item);
+            }
+            // AGREGAR UL AL DIV CONTENEDOR
+            const contenedor = document.getElementById("contenedor").appendChild(lista);
+        }
+    </script>
+</body>
+</html>
+
+<!--
+    Llenar una lista en el DOM a partir de un arreglo en Javascript
+    pseudocodgio:
+        CREAR ELEMENTO UL
+        RECORRER ARRAY
+        {
+            CREANDO ELEMENTOS LI
+            AGREGAR AL ELEMENTO UL
+        }
+        AGREGAR ELEMENTO UL AL DIV CONTENEDOR
+-->

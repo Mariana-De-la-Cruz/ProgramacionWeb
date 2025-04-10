@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenedor con imagen fija de fondo */
+.contenedor {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  background-image: url('russel.jpg'); /* Imagen fija */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+}
+
+/* Cajas que ocultan la imagen */
+.caja {
+  background-color: aqua;
+  border: 1px solid red;
+  z-index: 2;
+  transition: opacity 0.3s;
+}
+
+/* Cajas invisibles cuando se hace clic */
+.cajaClick {
+  opacity: 0;
+}
+
+/* Botón en la última fila */
+.cajaBoton {
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
